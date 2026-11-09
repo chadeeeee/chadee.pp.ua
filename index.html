@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chadee — роблю сайти, ботів і застосунки</title>
+    <meta name="description" content="Йо, я chadee — розробник з України. Роблю сайти, Telegram-ботів, застосунки під iPhone і торгових роботів." />
+    <meta name="theme-color" content="#06060a" />
+    <meta property="og:title" content="chadee — розробник з України" />
+    <meta property="og:description" content="Сайти, боти, застосунки. Python · TypeScript · Swift" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/110680757?v=4" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%2306060a'/><text x='50' y='70' font-size='62' text-anchor='middle' fill='%23d4ff3a' font-family='Arial Black'>c</text></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500;700;900&family=Manrope:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader" aria-hidden="true">
+      <div class="pl-grid"></div>
+      <div class="pl-inner">
+        <div class="pl-label mono">завантажую вайб</div>
+        <div class="pl-count"><span id="pl-num">0</span><sup>%</sup></div>
+        <div class="pl-dims mono" id="pl-dims">1D</div>
+      </div>
+      <div class="pl-curtain pl-c1"></div>
+      <div class="pl-curtain pl-c2"></div>
+    </div>
+
+    <div class="cursor" aria-hidden="true"><div class="cursor-dot"></div><div class="cursor-ring"><span class="cursor-text"></span></div></div>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="progress" aria-hidden="true"><div class="progress-bar"></div></div>
+    <canvas id="bg" aria-hidden="true"></canvas>
+
+    <header class="nav">
+      <a href="#top" class="logo" data-magnetic><span class="logo-mark">c</span><span class="logo-text glitch" data-text="chadee">chadee</span></a>
+      <nav class="nav-links">
+        <a href="#about">Хто я</a>
+        <a href="#projects">Проєкти</a>
+        <a href="#dimensions">15D</a>
+        <a href="#support">Підтримати</a>
+      </nav>
+      <a href="#contact" class="btn btn-small" data-magnetic><span>Написати</span></a>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-eyebrow mono reveal-up"><span class="dot-live"></span> Україна 🇺🇦 · беру замовлення</div>
+        <h1 class="hero-title" aria-label="Йо, я chadee">
+          <span class="line line-outline" data-split>Йо, я</span>
+          <span class="line" data-split>chadee</span>
+        </h1>
+        <div class="hero-role reveal-up">
+          <span class="mono">&gt;</span> <span id="role" class="role-text"></span><span class="caret">_</span>
+        </div>
+        <p class="hero-sub reveal-up">Роблю сайти, ботів, застосунки й торгових роботів. Щоб воно саме все робило, а ти відпочивав 😎</p>
+        <div class="hero-cta reveal-up">
+          <a href="#projects" class="btn" data-magnetic><span>Глянути роботи</span><i>↘</i></a>
+          <a href="#support" class="btn btn-ghost" data-magnetic><span>Підтримати</span><i>♥</i></a>
+        </div>
+        <div class="scroll-hint mono"><span>скрол</span><div class="scroll-line"></div></div>
+        <div class="hero-coords mono" id="coords">x 0.000 · y 0.000 · t 0.00</div>
+      </section>
+
+      <!-- MARQUEE -->
+      <section class="marquees" aria-label="Технології">
+        <div class="marquee" data-dir="1"><div class="marquee-track" id="mq-a"></div></div>
+        <div class="marquee marquee-alt" data-dir="-1"><div class="marquee-track" id="mq-b"></div></div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section about">
+        <div class="section-head"><span class="mono num">01</span><span class="mono">Хто я такий</span><span class="rule"></span></div>
+        <div class="about-grid">
+          <div class="about-card tilt" data-cursor="йо 👋">
+            <div class="about-card-inner">
+              <img src="https://avatars.githubusercontent.com/u/110680757?v=4" alt="chadee" width="460" height="460" />
+              <div class="holo"></div>
+              <div class="about-card-meta">
+                <span class="mono">@chadeeeee</span>
+                <span class="mono">UA · 2022 → ∞</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="about-text" data-words>
+              Кодити навчився сам, ніяких курсів. Почав з ботів у Telegram, а тепер роблю нормальні сайти, ботів для крипти й застосунки під iPhone, Mac і навіть годинник. Люблю, коли нудну роботу робить код, а не людина. І щоб усе крутилося навіть на сервері за копійки.
+            </p>
+            <p class="about-aside">Коли не кодю — катаюсь на велику 🚲</p>
+            <div class="stats">
+              <div class="stat"><b data-count="29" id="stat-repos">0</b><span>проєктів на GitHub</span></div>
+              <div class="stat"><b data-count="2022">0</b><span>почав кодити</span></div>
+              <div class="stat"><b data-count="5">0</b><span>платформ в одному застосунку</span></div>
+              <div class="stat"><b data-count="3">0</b><span>країни, де юзають моїх ботів</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section skills">
+        <div class="section-head"><span class="mono num">02</span><span class="mono">На чому пишу</span><span class="rule"></span></div>
+        <h2 class="big-title"><span data-split>Стек, що</span> <span class="accent" data-split>літає</span></h2>
+        <div class="skills-grid" id="skills-grid"></div>
+      </section>
+
+      <!-- PROJECTS (pinned horizontal) -->
+      <section id="projects" class="projects">
+        <div class="projects-pin">
+          <div class="projects-head">
+            <div class="section-head"><span class="mono num">03</span><span class="mono">Мої роботи</span><span class="rule"></span></div>
+            <h2 class="big-title"><span data-split>Що я</span> <span class="accent" data-split>зробив</span></h2>
+          </div>
+          <div class="projects-track" id="projects-track"></div>
+          <div class="projects-counter mono"><span id="pc-cur">01</span> / <span id="pc-total">06</span></div>
+        </div>
+      </section>
+
+      <!-- DIMENSIONS -->
+      <section id="dimensions" class="section dims">
+        <div class="section-head"><span class="mono num">04</span><span class="mono">А це просто для краси</span><span class="rule"></span></div>
+        <div class="dims-grid">
+          <div class="dims-copy">
+            <h2 class="big-title"><span data-split>3D? 4D?</span><br /><span class="accent" data-split>15D.</span></h2>
+            <p>Це справжній куб, тільки в <b id="dim-n-text">4</b> вимірах. Тягни повзунок аж до 15: компʼютер порахує, а мозок хай навіть не пробує 🤯 Покрути його мишкою чи пальцем.</p>
+            <div class="dim-control">
+              <div class="dim-readout"><span class="dim-n" id="dim-n">4</span><span class="mono">D</span></div>
+              <input type="range" min="3" max="15" value="4" id="dim-range" aria-label="Кількість вимірів" />
+              <div class="dim-stats mono">
+                <span><b id="dim-v">16</b> вершин</span>
+                <span><b id="dim-e">32</b> ребер</span>
+              </div>
+              <div class="dim-presets">
+                <button data-dim="3">3D</button><button data-dim="4">4D</button><button data-dim="7">7D</button><button data-dim="10">10D</button><button data-dim="15">15D</button>
+              </div>
+            </div>
+          </div>
+          <div class="dims-stage" data-cursor="крути">
+            <canvas id="hyper"></canvas>
+            <div class="dims-corner mono tl">n-cube</div>
+            <div class="dims-corner mono br" id="dims-fps">rot(ℝⁿ)</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SUPPORT -->
+      <section id="support" class="section support">
+        <div class="section-head"><span class="mono num">05</span><span class="mono">Підтримати</span><span class="rule"></span></div>
+        <h2 class="big-title"><span data-split>Подобається?</span><br /><span class="accent" data-split>Закинь вайбу</span></h2>
+        <p class="support-lead">Я роблю купу корисних штук безкоштовно. Наприклад, «Світло», щоб ти знав, коли вимкнуть світло. Хочеш, щоб таких штук було більше? Ось як допомогти 👇</p>
+        <div class="support-grid" id="support-grid"></div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section contact">
+        <div class="section-head"><span class="mono num">06</span><span class="mono">Пиши, не соромся</span><span class="rule"></span></div>
+        <h2 class="contact-title">
+          <span class="line" data-split>Є ідея?</span>
+          <span class="line line-outline" data-split>Напиши мені</span>
+        </h2>
+        <div class="contact-list" id="contact-list"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="mono">© <span id="year"></span> chadee · зроблено з ❤️ в Україні</div>
+      <div class="mono">Київ · <span id="clock">--:--:--</span></div>
+      <a href="#top" class="mono to-top" data-magnetic>нагору ↑</a>
+    </footer>
+
+    <div class="toast mono" id="toast" role="status"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
