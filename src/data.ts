@@ -18,12 +18,12 @@ export const CONTACTS = [
 
 export const ROLES = ["пишу ботів у Telegram", "роблю сайти на Next.js", "клепаю застосунки під iPhone", "кодю на Python", "автоматизую всяку рутину"];
 
-export const MARQUEE_A = ["Python", "Telegram-боти", "TypeScript", "Next.js", "React", "Three.js", "SwiftUI", "Flutter", "Rust"];
+export const MARQUEE_A = ["Python", "Telegram-боти", "TypeScript", "Next.js", "React", "SwiftUI", "Flutter", "Rust"];
 export const MARQUEE_B = ["Сайти", "Боти", "Застосунки", "Крипта", "Парсери", "Автоматизація", "AI-штуки", "Сервери"];
 
 export const SKILLS = [
   { title: "Python", icon: "🐍", items: ["Telegram-боти (aiogram)", "Парсери", "Боти для крипти", "AI-штуки", "Автоматизація"] },
-  { title: "Сайти", icon: "🌐", items: ["Next.js", "React", "TypeScript", "TailwindCSS", "3D на Three.js", "Анімації"] },
+  { title: "Сайти", icon: "🌐", items: ["Next.js", "React", "TypeScript", "TailwindCSS", "Лендінги", "Анімації"] },
   { title: "Застосунки", icon: "📱", items: ["iPhone · Mac · Apple Watch", "SwiftUI", "Android (Flutter)", "Десктоп на Rust"] },
   { title: "Бекенд", icon: "🗄️", items: ["Бази даних", "PostgreSQL · SQLite", "Логін і акаунти", "Оплата через Stripe", "Свої сервери"] },
 ];
